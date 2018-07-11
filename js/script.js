@@ -19,7 +19,7 @@ timer()
 
 $(function () {
    $('.mobile-nav').click(function() {
-       $('.menu').toggleClass('show');
+       $('.menu').toggleClass('showNav');
    });
 
    $('.square-one').click(function() {
