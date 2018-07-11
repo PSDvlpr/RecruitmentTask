@@ -7,7 +7,7 @@ body {
     line-height: 1;
     margin: 0;
     padding: 0;
-    font-size: .875rem;
+    font-size: 1rem;
     overflow-x: hidden;
 }
 
@@ -15,6 +15,13 @@ body {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.task-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    margin: 0 1em;
 }
 
 ul {
@@ -40,10 +47,15 @@ h1 {
 h2 {
     font-size: 1.7rem;
     font-weight: 600;
+    margin-bottom: .370em;
 }
 
 h3 {
     font-size: 1.429rem;
+}
+
+p {
+    line-height: 1.3;
 }
 
 .button {

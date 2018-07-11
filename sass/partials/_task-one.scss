@@ -1,0 +1,32 @@
+.task-list {
+    list-style: initial;
+    padding-left: 1em;
+}
+
+.task-list-item {
+    line-height: 1.2;
+    margin-bottom: .2em;
+}
+
+.square-wrapper {
+    margin: 2em auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-one {
+    border: 1px solid $red;
+    background: $red;
+    width: 50px;
+    height: 50px;
+    transition: 1s all;
+}
+
+.grow {
+    width: 100px;
+    height: 100px;
+}
