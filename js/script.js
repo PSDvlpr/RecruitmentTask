@@ -32,14 +32,14 @@ $(function () {
 //        $(this).removeClass('grow');
 //    })
 
-   $('.square-two').mouseenter(function() {
-       $('.icon').fadeOut(2000, function() {
-           $('.square-two p').fadeIn(1000);
-       });
-   }).mouseleave(function() {
-        $('.square-two p').fadeOut(2000, function () {
-            $('.icon').fadeIn(1000);
-        });
-    });
+//    $('.square-two').mouseenter(function() {
+//        $('.icon').fadeOut(2000, function() {
+//            $('.square-two p').fadeIn(1000);
+//        });
+//    }).mouseleave(function() {
+//         $('.square-two p').fadeOut(2000, function () {
+//             $('.icon').fadeIn(1000);
+//         });
+//     });
 
 });
