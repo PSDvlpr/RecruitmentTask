@@ -10,6 +10,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Source+Sans+Pro:200,400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/style.prefixed.css">
 </head>
 
@@ -25,7 +26,7 @@
                 <span>00:00</span>
             </div>
             <div class="mobile">
-                
+
             </div>
             <nav>
                 <ul class="menu">
@@ -39,23 +40,36 @@
             </nav>
         </div>
 
-        <div class="task-one element">
-            <div class="container">
-                <h2 class="task-title">Zadanie 1</h2>
-                <p>Utwórz kwadrat o dowolnym kolorze tła o wymiarach 50x50px. Utwórz zdarzenia:</p>
-                <ul class="task-list">
-                    <li class="task-list-item">kliknięcie powoduje jego powiększenie o 2 razy od aktualnych wymiarów,</li>
-                    <li class="task-list-item">wyjechanie kursorem myszki z kwadratu powoduje jego zmniejszenie do wymiarów początkowych (50x50).</li>
-                </ul>
-                <div class="square-wrapper">
-                    <div class="square square-one"></div>
+        <div class="task-wrapper">
+            <div class="task-one element">
+                    <h2 class="task-title">Zadanie 1</h2>
+                    <p>Utwórz kwadrat o dowolnym kolorze tła o wymiarach 50x50px. Utwórz zdarzenia:</p>
+                    <ul class="task-list">
+                        <li class="task-list-item">kliknięcie powoduje jego powiększenie o 2 razy od aktualnych wymiarów,</li>
+                        <li class="task-list-item">wyjechanie kursorem myszki z kwadratu powoduje jego zmniejszenie do wymiarów początkowych (50x50).</li>
+                    </ul>
+                    <div class="square-wrapper">
+                        <div class="square square-one"></div>
+                    </div>
+            </div>
+
+            <div class="task-two element">
+                <div class="container">
+                    <h2>Zadanie 2</h2>
+                    <p>Stwórz kwadrat z ikoną w którym przy najechaniu na niego myszką pojawi się wybrany tekst zamiast istniejącej ikonki.
+                        Odwróć akcję podczas wyjechania poza kwadrat kursorem myszki.</p>
+                    <div class="square-wrapper">
+                        <div class="square square-four">
+                            <i class="far fa-thumbs-up"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="task-two element">
+        <div class="task-three element">
             <div class="container">
-                <h2>Zadanie 2</h2>
+                <h2>Zadanie 3</h2>
                 <p>Utwórz przycisk, który spowoduje pokazanie się kolorowego okienka z tekstem z możliwością jego zamknięcia na górze po prawej stronie. W okienku musi znajdować się menu z przyciskami (tab), które powodują zamianę diva z tekstem na kolejny.</p>
 
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#taskModal">
@@ -92,21 +106,11 @@
 
             </div>
 
-            <div class="task-three element">
-                <div class="container">
-                    <h2>Zadanie 3</h2>
-                    <p>Utwórz kolorowy tekst z liczbą 0, która wraz z załadowaniem strony będzie się zwiększać do 500 w określonym czasie.</p>
-                    <span id="task-three-stats">0</span>
-                </div>
-            </div>
-
             <div class="task-four element">
                 <div class="container">
                     <h2>Zadanie 4</h2>
-                    <p>Stwórz kwadrat z ikoną w którym przy najechaniu na niego myszką pojawi się wybrany tekst zamiast istniejącej ikonki. Odwróć akcję podczas wyjechania poza kwadrat kursorem myszki.</p>
-                    <div class="square-wrapper">
-                        <div class="square square-four"><i class="far fa-thumbs-up"></i></div>
-                    </div>
+                    <p>Utwórz kolorowy tekst z liczbą 0, która wraz z załadowaniem strony będzie się zwiększać do 500 w określonym czasie.</p>
+                    <span id="task-three-stats">0</span>
                 </div>
             </div>
 
