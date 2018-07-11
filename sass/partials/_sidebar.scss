@@ -1,0 +1,59 @@
+.mobile-nav {
+    display: block;
+    padding: 1em;
+    text-align: center;
+
+    a {
+        font-size: 1.2rem;
+        letter-spacing: .15em;
+    }
+}
+
+.left-sidebar {
+    background-color: $black-side;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.counter {
+    color: $red;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    position: absolute;
+    left: 20px;
+    top: 12px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    max-height: 0;
+    transition: 2s all;
+}
+
+.menu-item {
+    margin-bottom: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    i {
+        margin-right: .4em;
+    }
+
+    a {
+        letter-spacing: 1.5px;
+
+        &:hover {
+            color: $red !important;
+        }
+    }
+}
+
+.show {
+    max-height: 20em;
+}
