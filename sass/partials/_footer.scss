@@ -5,3 +5,13 @@
     padding: 3.571em 0 2.143em;
     text-align: center;
 }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to(medium) {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

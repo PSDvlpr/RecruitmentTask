@@ -51,7 +51,7 @@
         position: static;
         font-size: 3rem;
         margin-left: 6em;
-        margin-top: 3em;
+        margin-top: 2.3em;
     }
 }
 
@@ -73,8 +73,7 @@
         flex-direction: column;
         position: fixed;
         max-height: 500px;
-        font-size: 1.5rem;
-        margin-left: 10em;
+        margin-left: 9em;
     }
 }
 
@@ -88,17 +87,25 @@
         margin-right: .4em;
     }
 
+    @include respond-to(large) {
+        margin-bottom: 1em;
+    }
+
     a {
         letter-spacing: 1.5px;
         color: $white;
         transition: .2s all;
 
+        &:hover {
+            color: $red !important;
+        }
+
         @include respond-to(medium) {
             font-size: .8rem;
         }
 
-        &:hover {
-            color: $red !important;
+        @include respond-to(large) {
+            font-size: 1.5rem;
         }
     }
 }
