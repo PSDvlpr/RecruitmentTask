@@ -42,24 +42,20 @@ $(function () {
         interval: 5000
     })
 
-    var fired = false;
+    let fired = false;
 
-    $(window).scroll(function () {
-        var a = $(window).scrollTop();
-        var b = $(".task-four").offset().top - 300;
-        if (a >= b && fired == false) {
-            $(".count").each(function () {
-                $(this).prop("Counter", 0).animate({
-                    Counter: $(this).text()
-                }, {
-                    duration: 10000,
-                    easing: "swing",
-                    step: function (d) {
-                        $(this).text(Math.ceil(d));
-                        fired = true
-                    }
-                })
+    $(function () {
+        $(".count").each(function () {
+            $(this).prop("Counter", 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 50000,
+                easing: "swing",
+                step: function (d) {
+                    $(this).text(Math.ceil(d));
+                    fired = true
+                }
             })
-        }
-    });
-});
+        })
+    })
+})();
