@@ -1,3 +1,5 @@
+// TASK 1 //
+
 let timerStart = Math.floor(Date.now() / 1000)
 
 function timer() {
@@ -18,31 +20,28 @@ function timer() {
 timer()
 
 $(function () {
-   $('.mobile-nav').click(function() {
-       $('.menu').toggleClass('showNav');
-   });
+
+    // TASK ONE
 
    $('.square-one').click(function() {
        $(this).addClass('grow').mouseleave(function() {
-            $(this).removeClass('grow');
-       });
-   });
+            $(this).removeClass('grow')
+       })
+   })
+
+    // TASK TWO
 
    $('.square-two').mouseenter(function() {
        $('.icon').fadeOut(2000, function() {
-           $('.square-two p').fadeIn(1000);
+           $('.square-two p').fadeIn(1000)
        });
    }).mouseleave(function() {
         $('.square-two p').fadeOut(2000, function () {
-            $('.icon').fadeIn(1000);
+            $('.icon').fadeIn(1000)
         });
     });
 
-    $('.carousel').carousel({
-        interval: 5000
-    })
-
-    let fired = false;
+    // TASK 4 //
 
     $(function () {
         $(".count").each(function () {
@@ -52,10 +51,21 @@ $(function () {
                 duration: 50000,
                 easing: "swing",
                 step: function (d) {
-                    $(this).text(Math.ceil(d));
-                    fired = true
+                    $(this).text(Math.ceil(d))
                 }
             })
         })
+    })()
+
+    // TASK 5 CAROUSEL 5 sec interval
+
+    $('.carousel').carousel({
+        interval: 5000
     })
-})();
+
+    // NAVBAR HANDLER
+
+    $('.mobile-nav').click(function () {
+        $('.menu').toggleClass('showNav')
+    })
+})
