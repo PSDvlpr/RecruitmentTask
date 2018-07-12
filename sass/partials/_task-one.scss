@@ -1,3 +1,24 @@
+.task-wrapper {
+    grid-area: taskwrap;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    margin: 0 1em;
+
+    @include respond-to(medium) {
+        flex-direction: row;
+    }
+}
+
+.task-one {
+     @include respond-to(medium) {
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+     }
+}
+
+
 .task-list {
     list-style: initial;
     padding-left: 1em;
