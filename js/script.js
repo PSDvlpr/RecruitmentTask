@@ -43,3 +43,27 @@ $(function () {
     })
 
 });
+
+$(document).ready(function () {
+
+    var fired = false;
+
+    $(window).scroll(function () {
+        var a = $(window).scrollTop();
+        var b = $(".stats").offset().top - 504;
+        if (a >= b && fired == false) {
+            $(".count").each(function () {
+                $(this).prop("Counter", 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: "swing",
+                    step: function (d) {
+                        $(this).text(Math.ceil(d));
+                        fired = true
+                    }
+                })
+            })
+        }
+    });
+});
