@@ -58,10 +58,6 @@ body {
     grid-area: tasksix;
 }
 
-footer {
-    grid-area: footer;
-}
-
 .container {
     width: 90%;
     margin: 0 auto;
@@ -99,6 +95,7 @@ h2 {
 
 h3 {
     font-size: 1.429rem;
+    font-weight: 600;
 }
 
 p {
