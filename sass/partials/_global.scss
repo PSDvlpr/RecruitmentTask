@@ -26,36 +26,12 @@ body {
     "footer"
 }
 
-.left-sidebar {
-    grid-area: sidebar;
-}
-
-.header {
-    grid-area: header;
-}
-
 .task-wrapper {
     grid-area: taskwrap;
     display: flex;
     flex-direction: column;
     padding: 2em 0;
     margin: 0 1em;
-}
-
-.task-three {
-    grid-area: taskthree;
-}
-
-.task-four {
-    grid-area: taskfour;
-}
-
-.task-five {
-    grid-area: taskfive;
-}
-
-.task-six {
-    grid-area: tasksix;
 }
 
 .container {
