@@ -43,7 +43,7 @@ $(function () {
                 }
             })
         })
-    })();
+    })
 
     // TASK 5 CAROUSEL 5 sec interval
 
