@@ -29,13 +29,13 @@
             </time>
 
             <nav id="navigation" class="navigation">
-                <ul class="menu">
-                    <li class="menu-item"><a href="#"><i class="fas fa-desktop"></i>Zadanie 1</a></li>
-                    <li class="menu-item"><a href="#"><i class="fas fa-hdd"></i>Zadanie 2</a></li>
-                    <li class="menu-item"><a href="#"><i class="fas fa-laptop"></i>Zadanie 3</a></li>
-                    <li class="menu-item"><a href="#"><i class="fas fa-tablet-alt"></i>Zadanie 4</a></li>
-                    <li class="menu-item"><a href="#"><i class="fas fa-keyboard"></i>Zadanie 5</a></li>
-                    <li class="menu-item"><a href="#"><i class="fas fa-mobile-alt"></i>Zadanie 6</a></li>
+                <ul class="menu js-nav">
+                    <li class="menu-item"><a href="#task-1"><i class="fas fa-desktop"></i>Zadanie 1</a></li>
+                    <li class="menu-item"><a href="#task-2"><i class="fas fa-hdd"></i>Zadanie 2</a></li>
+                    <li class="menu-item"><a href="#task-3"><i class="fas fa-laptop"></i>Zadanie 3</a></li>
+                    <li class="menu-item"><a href="#task-4"><i class="fas fa-tablet-alt"></i>Zadanie 4</a></li>
+                    <li class="menu-item"><a href="#task-5"><i class="fas fa-keyboard"></i>Zadanie 5</a></li>
+                    <li class="menu-item"><a href="#task-6"><i class="fas fa-mobile-alt"></i>Zadanie 6</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,7 +47,7 @@
         </header>
 
         <div class="task-wrapper">
-            <div class="task-one element">
+            <div id="task-1" class="task-one element">
                 <h2>Zadanie 1</h2>
                 <p>Utwórz kwadrat o dowolnym kolorze tła o wymiarach 50x50px. Utwórz zdarzenia:</p>
                 <ul class="task-list">
@@ -59,7 +59,7 @@
                 </div>
             </div>
 
-            <div class="task-two element">
+            <div id="task-2" class="task-two element">
                 <h2>Zadanie 2</h2>
                 <p>Stwórz kwadrat z ikoną w którym przy najechaniu na niego myszką pojawi się wybrany tekst zamiast istniejącej ikonki.
                     Odwróć akcję podczas wyjechania poza kwadrat kursorem myszki.</p>
@@ -72,7 +72,7 @@
             </div>
         </div>
 
-        <div class="task-three element">
+        <div id="task-3" class="task-three element">
             <div class="container">
                 <h2>Zadanie 3</h2>
                 <p>Utwórz przycisk, który spowoduje pokazanie się kolorowego okienka z tekstem z możliwością jego zamknięcia na górze po prawej stronie. W okienku musi znajdować się menu z przyciskami (tab), które powodują zamianę diva z tekstem na kolejny.</p>
@@ -131,15 +131,17 @@
             </div>
         </div>
 
-        <div class="task-four element">
+        <div id="task-4" class="task-four element">
             <div class="container">
                 <h2>Zadanie 4</h2>
                 <p>Utwórz kolorowy tekst z liczbą 0, która wraz z załadowaniem strony będzie się zwiększać do 500 w określonym czasie.</p>
-                <span class="count" id="task-three-stats">500</span>
+                <div class="count-wrap">
+                    <span class="count" id="task-three-stats">500</span>
+                </div>
             </div>
         </div>
 
-        <div class="task-five element">
+        <div id="task-5" class="task-five element">
             <div class="container">
                 <h2>Zadanie 5</h2>
                 <p>Utwórz slider, który będzie ukazywał jeden obrazek, ale będzie zawierał ich 5. Obrazek przewija się samoczynnie co 5 sekund. Slider powinien również posiadać przyciski po bokach do przewijania.</p>
@@ -174,7 +176,7 @@
             </div>
         </div>
 
-        <div class="task-six element">
+        <div id="task-6" class="task-six element">
             <div class="container">
                 <h2>Zadatnie 6</h2>
                 <p>Napisz pętle w javascript np. od 1 do 10, gdzie co druga liczba będzie wypisana na czerwono.</p>
@@ -207,7 +209,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-
+    <script src="js/scroll.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 
