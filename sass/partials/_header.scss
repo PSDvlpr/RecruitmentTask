@@ -1,15 +1,15 @@
 .header {
     grid-area: header;
     padding: 5.571em 0 3.571em;
-    background: $gray;
+    background-image: url('https://images.pexels.com/photos/772839/pexels-photo-772839.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     font-weight: 600;
 
     @include respond-to(medium) {
         padding-top: 7.571em;
-    }
-
-    h1 {
-        font-family: 'Source Sans Pro', sans-serif;
+        height: 50vh;
     }
 }
