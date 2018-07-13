@@ -1,20 +1,11 @@
  .task-two {
     padding-bottom: 0;
+    position: relative;
 
     @include respond-to(medium) {
         flex: 1;
         display: flex;
         flex-direction: column;
-    }
-
-    .square-wrapper {
-        @include respond-to(medium) {
-            margin-top: 5em;
-        }
-
-        @include respond-to(large) {
-            margin-top: 6.2em;
-        }
     }
 
 }
