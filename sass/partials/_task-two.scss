@@ -1,4 +1,6 @@
  .task-two {
+    padding-bottom: 0;
+
     @include respond-to(medium) {
         flex: 1;
         display: flex;
@@ -6,8 +8,15 @@
     }
 
     .square-wrapper {
-        margin-top: 5.8em;
+        @include respond-to(medium) {
+            margin-top: 5em;
+        }
+
+        @include respond-to(large) {
+            margin-top: 6.2em;
+        }
     }
+
 }
 
 @keyframes fadeIn {

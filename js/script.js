@@ -56,4 +56,24 @@ $(function () {
     $('.mobile-nav').click(function () {
         $('.menu').toggleClass('showNav')
     })
+
+    $('.menu-item a').click(function () {
+        $('.menu').removeClass('showNav')
+    })
 })
+
+new WOW().init();
+
+
+
+function loop() {
+    let i = 0
+    let arr = []
+
+    while(i < 10) {
+        i += 1
+        arr.push(i)
+    }
+}
+
+loop()
