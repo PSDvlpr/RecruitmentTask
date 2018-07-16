@@ -79,13 +79,19 @@ $(function () {
 })
 
 function loop() {
-    let i = 0
-    let arr = []
+    const container = document.querySelector(".six-loop")
 
-    while(i < 10) {
-        i += 1
-        arr.push(i)
+    for (let i = 1; i <= 10; i++) {
+        container.innerHTML += `<div class='box'>${i}</div>`
     }
+
+    let i = 0
+    $(".box").each(function (i) {
+        if (i % 2) {
+            $(this).addClass("red")
+        }
+        i++
+    })
 }
 
 loop()

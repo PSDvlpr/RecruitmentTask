@@ -1,3 +1,13 @@
 .task-six {
     grid-area: tasksix;
 }
+
+.red {
+    color: $red;
+}
+
+.six-loop {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
